@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block nav %}
+  <a href="/">Google Search</a>
+{% endblock %}
+
+{% block form %}
+  <form action="/https://images.google.com" method="get">
+    <div>
+      <input type="search" name="q">
+    </div>
+    <div>
+      <button>Search</button>
+    </div>
+  </form>
+{% endblock %}
