@@ -5,12 +5,26 @@
 {% endblock %}
 
 {% block form %}
-  <form action="https://google.com/search">
+  <form action="https://google.com/search" class="as">
     <div>
-      <input type="search" name="as_q">
+      <h3>Find pages with...</h3>
     </div>
     <div>
-      <button>Advanced Search</button>
+      <label for="all">all theses words:</label>
+      <input type="text" id="all" name="as_q">
     </div>
+    <div>
+      <label for="exact">this exact word or phrase:</label>
+      <input type="text" id="exact" name="as_epq">
+    </div>
+    <div>
+      <label for="any">any of these words:</label>
+      <input type="text" id="any" name="as_oq">
+    </div>
+    <div>
+      <label for="none">none of these words:</label>
+      <input type="text" id="none" name="as_eq">
+    </div>
+    <button style="background-color: dodgerblue; color: white; box-shadow: none;">Advanced Search</button>
   </form>
 {% endblock %}

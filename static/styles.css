@@ -1,0 +1,80 @@
+/* Will come back to improve. For now, just finish one quick build */
+/* reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  align-self: end;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+main {
+  align-self: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.as div{
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="search"] {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* body * {
+  border: 1px solid lightpink;
+} */
